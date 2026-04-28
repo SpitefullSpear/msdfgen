@@ -111,6 +111,32 @@
             "displayName": "Linux debug core-only config (static, install)",
             "inherits": [ "linux-dbg-base", "core-only", "install" ],
             "binaryDir": "${sourceDir}/build/linux-core-dbg"
+        },
+
+        {
+            "name": "linux-clang-vcpkg-rel",
+            "displayName": "Linux Clang release config with vcpkg and Skia (static)",
+            "inherits": [ "linux-vcpkg-rel", "clang" ]
+        }, {
+            "name": "linux-clang-vcpkg-dbg",
+            "displayName": "Linux Clang debug config with vcpkg and Skia (static)",
+            "inherits": [ "linux-vcpkg-dbg", "clang" ]
+        }, {
+            "name": "linux-clang-no-skia-rel",
+            "displayName": "Linux Clang release config with system libraries and no Skia (static, install)",
+            "inherits": [ "linux-no-skia-rel", "clang" ]
+        }, {
+            "name": "linux-clang-no-skia-dbg",
+            "displayName": "Linux Clang debug config with system libraries and no Skia (static, install)",
+            "inherits": [ "linux-no-skia-dbg", "clang" ]
+        }, {
+            "name": "linux-clang-core-rel",
+            "displayName": "Linux Clang release core-only config (static, install)",
+            "inherits": [ "linux-core-rel", "clang" ]
+        }, {
+            "name": "linux-clang-core-dbg",
+            "displayName": "Linux Clang debug core-only config (static, install)",
+            "inherits": [ "linux-core-dbg", "clang" ]
         }
     ],
     "buildPresets": [
@@ -234,6 +260,26 @@
         }, {
             "name": "linux-core-dbg",
             "configurePreset": "linux-core-dbg"
+        },
+
+        {
+            "name": "linux-clang-vcpkg-rel",
+            "configurePreset": "linux-clang-vcpkg-rel"
+        }, {
+            "name": "linux-clang-vcpkg-dbg",
+            "configurePreset": "linux-clang-vcpkg-dbg"
+        }, {
+            "name": "linux-clang-no-skia-rel",
+            "configurePreset": "linux-clang-no-skia-rel"
+        }, {
+            "name": "linux-clang-no-skia-dbg",
+            "configurePreset": "linux-clang-no-skia-dbg"
+        }, {
+            "name": "linux-clang-core-rel",
+            "configurePreset": "linux-clang-core-rel"
+        }, {
+            "name": "linux-clang-core-dbg",
+            "configurePreset": "linux-clang-core-dbg"
         }
     ]
 }

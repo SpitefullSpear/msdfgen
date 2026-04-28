@@ -46,7 +46,7 @@ the CMake configuration will take care of fetching all required packages from vc
 
 The standalone program is executed as
 ```
-msdfgen.exe <mode> <input> <options>
+msdfgen <mode> <input> <options>
 ```
 where only the input specification is required.
 
@@ -87,7 +87,7 @@ Some of the important ones are:
 
 For example,
 ```
-msdfgen.exe msdf -font C:\Windows\Fonts\arialbd.ttf 'M' -o msdf.png -dimensions 32 32 -pxrange 4 -autoframe -testrender render.png 1024 1024
+msdfgen msdf -font C:\Windows\Fonts\arialbd.ttf 'M' -o msdf.png -dimensions 32 32 -pxrange 4 -autoframe -testrender render.png 1024 1024
 ```
 
 will take the glyph capital M from the Arial Bold typeface, generate a 32&times;32 multi-channel distance field
